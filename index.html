@@ -246,6 +246,17 @@
   .pilot li::before { content: ""; position: absolute; left: 0; top: 9px; width: 12px; height: 3px; background: var(--red-bright); }
   .btn-line { display: inline-block; margin-top: 26px; padding: 14px 24px; border: 2px solid var(--brass); color: var(--brass); font-weight: 700; text-decoration: none; border-radius: 3px; }
   .btn-line:hover { background: var(--brass); color: var(--ink); }
+
+  .peek { padding: 72px 0; }
+  .peek h2 { margin-bottom: 12px; }
+  .peek .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 28px 0; }
+  .peek figure { margin: 0; }
+  .peek img { width: 100%; height: auto; display: block; }
+  .peek figcaption { font-size: 14px; opacity: .75; margin-top: 8px; }
+  .peek .links { display: flex; flex-wrap: wrap; gap: 14px; }
+  .peek .btn-line { margin-top: 0; border-color: var(--ink); color: var(--ink); }
+  .peek .btn-line:hover { background: var(--ink); color: var(--paper); }
+  @media (max-width: 720px) { .peek .grid { grid-template-columns: 1fr; } }
   .btn-line:focus-visible { outline: 3px solid var(--red-bright); outline-offset: 2px; }
 
   /* Gear teaser */
@@ -376,12 +387,28 @@
     </div>
   </section>
 
+  <section class="peek" id="peek">
+    <div class="wrap">
+      <h2>Take a look inside</h2>
+      <p>Here&rsquo;s a preview of what we&rsquo;re building: real pages from the 14-Day Fast workbook and The Narrow Road for Men, the full website, and our overview deck for pastors and partners.</p>
+      <div class="grid">
+        <figure><img src="files/spread_fast.png" alt="Day 1 pages from the 14-Day Fast workbook" loading="lazy"><figcaption>The 14-Day Fast workbook, Day 1</figcaption></figure>
+        <figure><img src="files/spread_nr.png" alt="Week 1 pages from The Narrow Road for Men" loading="lazy"><figcaption>The Narrow Road for Men, Week 1</figcaption></figure>
+      </div>
+      <div class="links">
+        <a class="btn-line" href="preview/index.html" target="_blank" rel="noopener">Preview the full website</a>
+        <a class="btn-line" href="files/War-on-Comfort-Marketing-Deck.pdf" target="_blank" rel="noopener">View the overview deck (PDF)</a>
+        <a class="btn-line" href="files/War-on-Comfort-Marketing-Deck.pptx" download>Download the deck (PowerPoint)</a>
+      </div>
+    </div>
+  </section>
+
   <section class="gear">
     <div class="wrap">
       <div class="tees"><figure><svg viewBox="0 0 200 210" role="img" aria-label="Navy t-shirt"><path d="M70 12 L40 22 L8 52 L30 82 L48 70 L48 200 L152 200 L152 70 L170 82 L192 52 L160 22 L130 12 C124 30 76 30 70 12 Z" fill="#1F2A44"/><g transform="translate(87 56) scale(.22)"><path d="M60 184V64" stroke="#F6F3E9" stroke-width="8"/><ellipse cx="60" cy="40" rx="11" ry="25" fill="none" stroke="#F6F3E9" stroke-width="7.5"/><path d="M-4 110C20 50 40 24 60 40S96 84 104 46 112 10 124 18" fill="none" stroke="#E0604F" stroke-width="4.5" stroke-linecap="round"/></g></svg><figcaption>Navy</figcaption></figure><figure><svg viewBox="0 0 200 210" role="img" aria-label="Thread Red t-shirt"><path d="M70 12 L40 22 L8 52 L30 82 L48 70 L48 200 L152 200 L152 70 L170 82 L192 52 L160 22 L130 12 C124 30 76 30 70 12 Z" fill="#A8291C"/><g transform="translate(87 56) scale(.22)"><path d="M60 184V64" stroke="#F6F3E9" stroke-width="8"/><ellipse cx="60" cy="40" rx="11" ry="25" fill="none" stroke="#F6F3E9" stroke-width="7.5"/><path d="M-4 110C20 50 40 24 60 40S96 84 104 46 112 10 124 18" fill="none" stroke="#1A1D15" stroke-width="4.5" stroke-linecap="round"/></g></svg><figcaption>Thread Red</figcaption></figure></div>
       <div>
         <h2>Gear for the road</h2>
-        <p>A small run of shirts is on the way, in Navy and Thread Red. Soft shirts for doing hard things, with ten percent of every sale given to people in need.</p>
+        <p>A small run of shirts is on the way, in Olive, Black, Canvas, Bone, Navy, and Thread Red. Soft shirts for doing hard things, with ten percent of every sale given to people in need.</p>
         <p>Subscribers will hear about the first run before anyone else.</p>
       </div>
     </div>
